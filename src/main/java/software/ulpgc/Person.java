@@ -3,7 +3,7 @@ package software.ulpgc;
 import java.time.LocalDate;
 
 public class Person {
-    public static final int DaysPerYear = 365;
+    public static final int DAYS_PER_YEAR = 365;
     private final String name;
     private final LocalDate birthDate;
 
@@ -25,7 +25,7 @@ public class Person {
     }
 
     private int toYears(long days) {
-        return (int) (days/ DaysPerYear);
+        return (int) (days/ DAYS_PER_YEAR);
     }
 
     @Override
@@ -36,5 +36,4 @@ public class Person {
                 ", age=" + getAge() +
                 '}';
     }
-
 }
